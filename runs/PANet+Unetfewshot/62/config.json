@@ -1,0 +1,35 @@
+{
+  "align": true,
+  "align_loss_scaling": 30,
+  "batch_size": 1,
+  "dataset": "Mas_map",
+  "exp_name": "M a s _ m a p",
+  "gpu_id": 0,
+  "input_size": [
+    1024,
+    1024
+  ],
+  "iters": 30000,
+  "lr_milestones": [
+    10000,
+    20000,
+    30000
+  ],
+  "mode": "FEWSHOT train",
+  "mode1": "FEWSHOT train",
+  "mode2": "CNN train",
+  "mode3": "test FEWSHOT",
+  "mode4": "test CNN",
+  "mode5": "FEWSHOT gen",
+  "path": {
+    "init_path": "./pretrained_model/vgg16-397923af.pth",
+    "log_dir": "./runs"
+  },
+  "print_interval": 50,
+  "save_model_interval": 10000,
+  "seed": 1234,
+  "task_setting": {
+    "queries": 3,
+    "shots": 5
+  }
+}

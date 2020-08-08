@@ -1,0 +1,79 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "D:\\Pycharm Projects\\UNET+PROTONET_Rebuild",
+    "dependencies": [
+      "numpy==1.18.1",
+      "sacred==0.7.5"
+    ],
+    "mainfile": "config.py",
+    "name": "PANet+Unet",
+    "repositories": [],
+    "sources": [
+      [
+        "config.py",
+        "_sources\\config_6bdc4de72d1365ee59a3f5906b87afb8.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"D:\\Anaconda\\envs\\pytorch\\lib\\site-packages\\sacred\\config\\captured_function.py\", line 48, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"D:/Pycharm Projects/UNET+PROTONET_Rebuild/fewshot_pred_generator.py\", line 83, in main\n    query_pred.save(r'C:\\Users\\Tim Wang\\Desktop\\data\\cache')\n",
+    "AttributeError: 'ToPILImage' object has no attribute 'save'\n"
+  ],
+  "heartbeat": "2020-07-29T14:12:28.409540",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz",
+    "gpus": {
+      "driver_version": "451.77",
+      "gpus": [
+        {
+          "model": "GeForce RTX 2080 Ti",
+          "persistence_mode": false,
+          "total_memory": 11264
+        }
+      ]
+    },
+    "hostname": "DESKTOP-866H2RA",
+    "os": [
+      "Windows",
+      "Windows-10-10.0.19041-SP0"
+    ],
+    "python_version": "3.7.7"
+  },
+  "meta": {
+    "command": "main",
+    "options": {
+      "--beat_interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print_config": false,
+      "--priority": null,
+      "--queue": false,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2020-07-29T14:12:08.429012",
+  "status": "FAILED",
+  "stop_time": "2020-07-29T14:12:28.410538"
+}

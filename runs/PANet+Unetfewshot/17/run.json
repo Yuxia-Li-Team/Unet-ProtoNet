@@ -1,0 +1,84 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "D:\\Pycharm Projects\\UNET+PROTONET_Rebuild",
+    "dependencies": [
+      "numpy==1.18.1",
+      "sacred==0.7.5"
+    ],
+    "mainfile": "config.py",
+    "name": "PANet+Unet",
+    "repositories": [],
+    "sources": [
+      [
+        "config.py",
+        "_sources\\config_6bdc4de72d1365ee59a3f5906b87afb8.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"D:\\Anaconda\\envs\\pytorch\\lib\\site-packages\\sacred\\config\\captured_function.py\", line 48, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"D:/Pycharm Projects/UNET+PROTONET_Rebuild/fewshot_pred_generator.py\", line 82, in main\n    ax1.imshow(query_pred, cmap='gray')\n",
+    "  File \"D:\\Anaconda\\envs\\pytorch\\lib\\site-packages\\matplotlib\\__init__.py\", line 1599, in inner\n    return func(ax, *map(sanitize_sequence, args), **kwargs)\n",
+    "  File \"D:\\Anaconda\\envs\\pytorch\\lib\\site-packages\\matplotlib\\cbook\\deprecation.py\", line 369, in wrapper\n    return func(*args, **kwargs)\n",
+    "  File \"D:\\Anaconda\\envs\\pytorch\\lib\\site-packages\\matplotlib\\cbook\\deprecation.py\", line 369, in wrapper\n    return func(*args, **kwargs)\n",
+    "  File \"D:\\Anaconda\\envs\\pytorch\\lib\\site-packages\\matplotlib\\axes\\_axes.py\", line 5679, in imshow\n    im.set_data(X)\n",
+    "  File \"D:\\Anaconda\\envs\\pytorch\\lib\\site-packages\\matplotlib\\image.py\", line 685, in set_data\n    \"float\".format(self._A.dtype))\n",
+    "TypeError: Image data of dtype object cannot be converted to float\n"
+  ],
+  "heartbeat": "2020-07-29T13:39:38.504387",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz",
+    "gpus": {
+      "driver_version": "451.77",
+      "gpus": [
+        {
+          "model": "GeForce RTX 2080 Ti",
+          "persistence_mode": false,
+          "total_memory": 11264
+        }
+      ]
+    },
+    "hostname": "DESKTOP-866H2RA",
+    "os": [
+      "Windows",
+      "Windows-10-10.0.19041-SP0"
+    ],
+    "python_version": "3.7.7"
+  },
+  "meta": {
+    "command": "main",
+    "options": {
+      "--beat_interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print_config": false,
+      "--priority": null,
+      "--queue": false,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2020-07-29T13:39:18.819069",
+  "status": "FAILED",
+  "stop_time": "2020-07-29T13:39:38.505385"
+}
